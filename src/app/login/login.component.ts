@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
   error : boolean = false
   textoError = "error"
   constructor(private LoginService: LoginService, private router: Router) { }
-  mostrandoClave: boolean = false
+  mostrandoClave: boolean = true
   
   userData : any = {
     email : "a"
@@ -21,6 +21,7 @@ export class LoginComponent implements OnInit {
   mostrarClave(){
     if(this.mostrandoClave){
       this.mostrandoClave = false
+      
     }else{
       this.mostrandoClave = true
     }
